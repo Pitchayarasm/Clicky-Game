@@ -5,11 +5,47 @@
     "image": "./assets/harry_potter.jpg"
   },{
     "id": 2,
-    "name": "Hermione_Granger",
+    "name": "Hermione Granger",
     "image": "./assets/hermione_granger.jpg"
   },{
     "id": 3,
-    "name": "Ronald_Weasley",
+    "name": "Ronald Weasley",
     "image": "./assets/ronald_weasley.jpg"
+  },{
+    "id": 4,
+    "name": "Albus Dumbledor",
+    "image": "./assets/albus_dumbledor.jpg"
+  },{
+    "id": 5,
+    "name": "Arthur Weasley",
+    "image": "./assets/arthur_weasley.jpg"
+  },{
+    "id": 6,
+    "name": "Cedric Diggory",
+    "image": "./assets/cedric_diggory.jpg"
+  },{
+    "id": 7,
+    "name": "Draco Malfoy",
+    "image": "./assets/draco_malfoy.jpg"
+  },{
+    "id": 8,
+    "name": "Jinny Weasley",
+    "image": "./assets/jinny_weasley.jpg"
+  },{
+    "id": 9,
+    "name": "Minerva Mcgonnagall",
+    "image": "./assets/minerva_mcgonnagall.jpg"
+  },{
+    "id": 10,
+    "name": "Rubeus Hagrid",
+    "image": "./assets/rubeus_hagrid.jpg"
+  },{
+    "id": 11,
+    "name": "Seamus Finnigan",
+    "image": "./assets/seamus_finnigan.jpg"
+  },{
+    "id": 12,
+    "name": "Severus Snape",
+    "image": "./assets/severus_snape.jpg"
   }
 ]

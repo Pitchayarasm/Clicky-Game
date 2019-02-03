@@ -4,9 +4,7 @@ import "./style.css";
 function Main(props) {
   return (
     <React.Fragment>
-      <div className="container">
-        <img className="images" alt={props.name} src={props.image}/>
-      </div>
+        <img className="images" onClick={() => props.handleClick(props.id)} id={props.id} alt={props.name} src={props.image}/>
     </React.Fragment>
   )
 }

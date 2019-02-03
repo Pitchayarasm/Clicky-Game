@@ -5,25 +5,63 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 
-
-
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
-    friends
+    friends,
+    score : 0,
+    highScore : 0,
+    isClick : []
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  handleClick = (id) => {
+    if (!this.state.isClick.includes(id)) {
+      let pickedId = this.state.isClick.slice();    
+          pickedId.push(id);   
+      let newFriends = this.state.friends.sort(() => Math.random() - 0.5);
+      this.setState({
+        isClick : pickedId,
+        score : this.state.score + 1,
+        friends : newFriends
+      },() => {
+        if (this.state.score < this.state.highScore) {
+          this.setState({
+            highScore : this.state.highScore
+          })
+        } else {
+          this.setState({
+            highScore : this.state.score
+          })
+        }
+      })
+    } else {
+        this.setState({
+          isClick : [],
+          score : 0,
+          highScore : this.state.highScore
+        })
+    }
+  }
+
   render() {
-    let friendList = this.state.friends.map(listF => <Main key={listF.id} {...listF} />)
     return (
       <React.Fragment>
-        <Nav />
+        <Nav score={this.state.score} highScore={this.state.highScore}/>
         <Header />
-        {friendList}
+        <div className="container">
+        {this.state.friends.map(friend => (
+          <Main
+            id={friend.id}
+            key={friend.id}
+            image={friend.image}
+            handleClick={this.handleClick}
+          />
+        ))}
+        </div>
         <Footer />
       </React.Fragment>
     )};
+
 }
 
 export default App;

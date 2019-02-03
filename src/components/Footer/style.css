@@ -1,5 +1,5 @@
 .footer {
-  background: rgb(172, 65, 65);
+  background: rgb(1, 112, 112);
   height: 100px;
   position: relative;
   color: #fff;
@@ -11,7 +11,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: brown;
+  background: rgb(1, 70, 70);
   padding: 8px;
   font-weight: 600;
 }
