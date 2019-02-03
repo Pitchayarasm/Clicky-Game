@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "name": "Harry Potter",
+    "image": "./assets/harry_potter.jpg"
+  },{
+    "id": 2,
+    "name": "Hermione_Granger",
+    "image": "./assets/hermione_granger.jpg"
+  },{
+    "id": 3,
+    "name": "Ronald_Weasley",
+    "image": "./assets/ronald_weasley.jpg"
+  }
+]
