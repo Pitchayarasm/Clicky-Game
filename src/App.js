@@ -15,8 +15,9 @@ class App extends Component {
   };
 
   handleClick = (id) => {
+    console.log(this.state.isClick)
     if (!this.state.isClick.includes(id)) {
-      let pickedId = this.state.isClick.slice();    
+      let pickedId = this.state.isClick;
           pickedId.push(id);   
       let newFriends = this.state.friends.sort(() => Math.random() - 0.5);
       this.setState({
